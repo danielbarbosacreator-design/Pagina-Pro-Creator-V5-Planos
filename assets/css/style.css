@@ -732,3 +732,12 @@ main{overflow-x:clip}
   .hero-stack .hero-video{max-width:none;min-width:0;width:100%}
   .mockup-band{display:none}
 }
+/* V5: hero do desktop ocupando a primeira tela */
+@media (min-width:1025px){
+  .hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:calc(var(--header) + 32px);padding-bottom:48px}
+  .hero-stack{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:56px}
+  .hero-stack>.h1{font-size:clamp(2.75rem,4.2vw,4.25rem);line-height:1.06;margin-bottom:36px}
+  .hero-stack>.hero-actions .btn{--h:64px;min-height:64px;font-size:18px;padding-left:32px}
+  .hero-stack>.microcopy{font-size:15px;margin-top:18px}
+}
+@media (min-width:1600px){.hero>.container.hero-stack{max-width:1480px}}
