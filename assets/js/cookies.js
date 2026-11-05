@@ -49,3 +49,6 @@
   loadGA();
   if (!isPreview) loadMeta();
 })();
+
+/* V5: repassa UTMs da landing para os links de checkout marcados com data-checkout */
+(function(){try{var q=new URLSearchParams(location.search),k=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'],p=[];k.forEach(function(x){if(q.get(x))p.push(x+'='+encodeURIComponent(q.get(x)));});if(!p.length)return;document.querySelectorAll('a[data-checkout]').forEach(function(a){var h=a.getAttribute('href');if(!h||h.indexOf('wa.me')>-1)return;a.setAttribute('href',h+(h.indexOf('?')>-1?'&':'?')+p.join('&'));});}catch(e){}})();
