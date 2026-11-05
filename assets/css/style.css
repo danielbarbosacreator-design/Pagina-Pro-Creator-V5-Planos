@@ -835,3 +835,9 @@ main{overflow-x:clip}
 .btn-hero2{--h:auto;height:auto;min-height:0;padding:6px 0!important;border:0;background:none;font-size:15px;text-decoration:underline;text-underline-offset:4px;box-shadow:none}
 .btn-hero2::before{display:none}
 @media (min-width:1025px){.hero-stack>.hero-actions{gap:10px 24px;align-items:center}}
+/* Checkout Stripe: estado de carregamento no clique */
+.btn.is-loading{pointer-events:none;position:relative}
+.btn.is-loading>*,.btn.is-loading{color:transparent!important}
+.btn.is-loading::after{content:"";position:absolute;left:50%;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;border:2.5px solid var(--pc-load-color,#0090ff);border-right-color:transparent;animation:pc-spin .7s linear infinite}
+.btn-primary.is-loading{--pc-load-color:#fff}
+@keyframes pc-spin{to{transform:rotate(360deg)}}

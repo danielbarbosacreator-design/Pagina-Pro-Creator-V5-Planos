@@ -52,3 +52,10 @@
 
 /* V5: repassa UTMs da landing para os links de checkout marcados com data-checkout */
 (function(){try{var q=new URLSearchParams(location.search),k=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'],p=[];k.forEach(function(x){if(q.get(x))p.push(x+'='+encodeURIComponent(q.get(x)));});if(!p.length)return;document.querySelectorAll('a[data-checkout]').forEach(function(a){var h=a.getAttribute('href');if(!h||h.indexOf('wa.me')>-1)return;a.setAttribute('href',h+(h.indexOf('?')>-1?'&':'?')+p.join('&'));});}catch(e){}})();
+/* V5: checkout Stripe mais rápido (pré-carrega no hover) e animação no clique */
+(function(){try{var done={};function warm(a){var h=a.href;if(!h||done[h]||h.indexOf('buy.stripe.com')<0)return;done[h]=1;var l=document.createElement('link');l.rel='prefetch';l.href=h;document.head.appendChild(l);}
+document.querySelectorAll('a[data-checkout]').forEach(function(a){
+a.addEventListener('pointerenter',function(){warm(a)},{passive:true});
+a.addEventListener('touchstart',function(){warm(a)},{passive:true});
+a.addEventListener('click',function(){if(a.href.indexOf('buy.stripe.com')<0)return;a.classList.add('is-loading');setTimeout(function(){a.classList.remove('is-loading')},5000);});});
+window.addEventListener('pageshow',function(){document.querySelectorAll('a.is-loading').forEach(function(a){a.classList.remove('is-loading')})});}catch(e){}})();
