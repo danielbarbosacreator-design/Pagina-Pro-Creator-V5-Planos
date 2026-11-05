@@ -33,7 +33,7 @@
     if (planos && 'IntersectionObserver' in window) {
       var vo = new IntersectionObserver(function (es) {
         if (es.some(function (e) { return e.isIntersecting; })) {
-          window.fbq('track', 'ViewContent', { content_name: 'Planos Pro Creator', content_category: 'Planos', value: 97.90, currency: 'BRL' });
+          window.fbq('track', 'ViewContent', { content_name: 'Planos Pro Creator', content_category: 'Planos', value: 59.90, currency: 'BRL' });
           vo.disconnect();
         }
       }, { rootMargin: "0px 0px -30% 0px" });
