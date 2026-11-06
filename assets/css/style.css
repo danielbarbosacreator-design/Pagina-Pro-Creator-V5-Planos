@@ -857,3 +857,16 @@ main{overflow-x:clip}
   .hs-mockup{max-width:640px}
 }
 .hs-copy .h1{order:1}.hs-copy .hero-lead{order:2;display:block}.hs-copy .hero-actions{order:3}.hs-copy .microcopy{order:4}
+/* Hero 2026-11-06: ajustes desktop e mobile */
+.hs-copy .hs-cond{margin-top:-8px;color:#fff}
+.hs-copy .hs-cond .microcopy-sub{opacity:.92;color:#fff}
+@media (min-width:961px){.hs-copy .h1{max-width:19ch;font-size:clamp(2.4rem,3.3vw,3.25rem);line-height:1.08}}
+@media (max-width:720px){
+  .hs-desk{display:none}
+  .hs-hide-mob{display:none}
+  .hero{padding-bottom:32px}
+  .hs-copy{gap:14px}
+  .hs-copy .hs-cond{margin-top:-2px;font-size:14px;line-height:1.45}
+  .hs-copy .hs-cond .microcopy-sub{font-size:13px}
+  .hero-split{gap:28px}
+}
