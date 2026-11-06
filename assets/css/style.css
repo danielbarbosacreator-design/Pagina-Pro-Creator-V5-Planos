@@ -841,3 +841,19 @@ main{overflow-x:clip}
 .btn.is-loading::after{content:"";position:absolute;left:50%;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;border:2.5px solid var(--pc-load-color,#0090ff);border-right-color:transparent;animation:pc-spin .7s linear infinite}
 .btn-primary.is-loading{--pc-load-color:#fff}
 @keyframes pc-spin{to{transform:rotate(360deg)}}
+/* Hero 2026-11: texto à esquerda, mockup PNG inteiro à direita */
+.hero-split{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:48px}
+.hs-copy{display:flex;flex-direction:column;align-items:flex-start;gap:22px}
+.hs-copy .h1{margin:0;text-wrap:balance}
+.hs-copy .hero-lead{margin:0;max-width:540px}
+.hs-copy .microcopy{margin:0}
+.hs-copy .microcopy-sub{display:block;margin-top:4px}
+.hs-visual{display:flex;justify-content:center;min-width:0}
+.hs-mockup{display:block;width:100%;height:auto;max-width:760px;object-fit:contain;filter:drop-shadow(0 30px 40px rgba(11,27,51,.14))}
+@media (max-width:960px){
+  .hero-split{grid-template-columns:1fr;gap:36px}
+  .hs-copy{align-items:center;text-align:center}
+  .hs-copy .hero-actions{justify-content:center}
+  .hs-mockup{max-width:640px}
+}
+.hs-copy .h1{order:1}.hs-copy .hero-lead{order:2;display:block}.hs-copy .hero-actions{order:3}.hs-copy .microcopy{order:4}
