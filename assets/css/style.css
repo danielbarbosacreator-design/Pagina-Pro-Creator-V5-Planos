@@ -889,3 +889,9 @@ main{overflow-x:clip}
 .hero-mock-sec .section-head{margin-bottom:28px;text-align:center}
 .hero-mock-sec .hs-mockup{margin:0 auto;max-width:900px}
 @media (max-width:720px){.hero-v .hs-video{border-radius:12px}.hero-mock-sec{padding-top:40px;padding-bottom:32px}}
+/* Primeira dobra = VSL (2026-11-07b) */
+.hero.hero-v{padding-top:calc(var(--header) + 20px);padding-bottom:32px}
+.hero-v .hs-copy{gap:16px}
+.hero-v .hv-title{font-size:clamp(1.5rem,2.6vw,2.4rem);line-height:1.15;max-width:26ch}
+.hero-v .hs-video{max-width:min(980px,calc((100svh - 300px) * 16 / 9));min-width:min(640px,100%);margin:0 auto}
+@media (max-width:720px){.hero.hero-v{padding-top:calc(var(--header) + 10px);padding-bottom:24px}.hero-v .hs-copy{gap:12px}.hero-v .hv-title{font-size:1.35rem}.hero-v .hs-video{min-width:0;max-width:100%}}
