@@ -870,5 +870,9 @@ main{overflow-x:clip}
   .hs-copy .hs-cond .microcopy-sub{font-size:13px}
   .hero-split{gap:28px}
 }
-.vsl-sec .hero-video{max-width:880px}
+.vsl-sec .hero-video{max-width:880px;margin:0 auto}
+.vsl-wrap{display:flex;justify-content:center}
+.vsl-cta{display:flex;justify-content:center;margin-top:28px}
+.hs-copy .eyebrow{margin-bottom:14px;color:rgba(255,255,255,.9);letter-spacing:.14em}
+.plans .plans-terms{font-size:14px;opacity:.85}
 @media (max-width:640px){.vsl-sec .hero-video{border-radius:12px}}
