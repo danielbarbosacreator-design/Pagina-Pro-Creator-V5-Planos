@@ -876,3 +876,16 @@ main{overflow-x:clip}
 .hs-copy .eyebrow{margin-bottom:14px;color:rgba(255,255,255,.9);letter-spacing:.14em}
 .plans .plans-terms{font-size:14px;opacity:.85}
 @media (max-width:640px){.vsl-sec .hero-video{border-radius:12px}}
+/* Topo com VSL (2026-11-07) */
+.hero.hero-v{min-height:0;display:block}
+.hero-v .hero-split{grid-template-columns:1fr;gap:0}
+.hero-v .hs-copy{align-items:center;text-align:center}
+.hero-v .hs-copy .h1{max-width:20ch}
+.hero-v .hs-copy .hero-lead{max-width:680px}
+.hero-v .hs-copy .hero-actions{justify-content:center;order:4}
+.hero-v .hs-copy .microcopy{order:5}
+.hero-v .hs-video{order:3;width:100%;max-width:880px;margin:6px auto}
+.hero-mock-sec{padding-top:56px;padding-bottom:56px}
+.hero-mock-sec .section-head{margin-bottom:28px;text-align:center}
+.hero-mock-sec .hs-mockup{margin:0 auto;max-width:900px}
+@media (max-width:720px){.hero-v .hs-video{border-radius:12px}.hero-mock-sec{padding-top:40px;padding-bottom:32px}}
