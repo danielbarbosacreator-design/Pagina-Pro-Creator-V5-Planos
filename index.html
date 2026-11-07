@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/img/mockup-procreator.webp">
-<link rel="stylesheet" href="assets/css/style.css?v=20261106hero3">
+<link rel="stylesheet" href="assets/css/style.css?v=20261107copy">
 <style>
 #pc-loader{position:fixed;inset:0;z-index:10000;background:#fff;display:flex;align-items:center;justify-content:center;transition:opacity .35s ease,visibility .35s}
 #pc-loader.done{opacity:0;visibility:hidden}
@@ -124,13 +124,14 @@ fbq('init','912571467763616');fbq('track','PageView');
   <section class="hero" id="inicio">
     <div class="container hero-split">
       <div class="hs-copy">
-        <h1 class="h1">Crie propostas <span class="hs-desk">profissionais </span>e envie contratos para assinatura</h1>
-        <p class="hero-lead">Tem um orçamento ou contrato pra fazer esta semana? Teste com um trabalho real da sua empresa.</p>
+        <span class="eyebrow">Plataforma de gestão comercial</span>
+        <h1 class="h1">Do primeiro orçamento ao contrato assinado.</h1>
+        <p class="hero-lead">Organize seus clientes, crie propostas profissionais, acompanhe negociações e gerencie contratos em um só lugar. Tudo para facilitar o dia a dia da sua empresa.</p>
         <div class="hero-actions">
           <a class="btn btn-primary btn-nowrap" data-checkout data-plan="essencial" data-value="59.90" href="https://buy.stripe.com/cNiaEXf2n9af7QYevH2Nq03" target="_blank" rel="noopener noreferrer">Começar meus 7 dias grátis <span class="btn-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></a>
           <a class="btn btn-ghost-light btn-hero2" href="#planos">Ver planos e preços</a>
         </div>
-        <p class="microcopy hs-cond"><strong>Cartão necessário · R$ 0 de mensalidade hoje</strong><span class="microcopy-sub">Após 7 dias, R$ 59,90/mês. Cancele antes do fim do teste para evitar a cobrança.</span></p>
+        <p class="microcopy hs-cond"><strong>R$ 0 hoje · Cartão necessário · Cancele durante o teste sem cobrança.</strong><span class="microcopy-sub">Após 7 dias, R$ 59,90/mês no Essencial.</span></p>
       </div>
       <div class="hs-visual">
         <img class="hs-mockup" src="assets/img/mockup-home.webp?v=1" alt="Dashboard do Pro Creator com prévias de uma proposta comercial e de um contrato para assinatura." width="1600" height="1269" fetchpriority="high" decoding="async">
@@ -138,16 +139,14 @@ fbq('init','912571467763616');fbq('track','PageView');
     </div>
   </section>
 
-  <!-- MOCKUP -->
-  <section class="mockup-band hs-hide-mob" aria-label="Pro Creator no notebook e no celular">
-    <div class="container">
-      <img class="mockup-band-img" loading="lazy" decoding="async" src="assets/img/painel-notebook.webp?v=2" alt="Pro Creator funcionando no notebook" width="1100" height="639">
-    </div>
-  </section>
-
   <!-- VSL -->
   <section class="section vsl-sec" id="vsl" aria-label="Vídeo de demonstração do Pro Creator">
-    <div class="container" style="display:flex;justify-content:center">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2 class="h2">Veja como é fácil usar o Pro Creator <strong>na sua empresa.</strong></h2>
+        <p class="lead">Assista a uma demonstração real e descubra como organizar seu processo comercial, da proposta ao contrato.</p>
+      </div>
+      <div class="vsl-wrap">
         <div class="hero-video" data-vsl>
           <video data-vsl-video src="assets/video/vsl-trial.mp4?v=20261107" poster="assets/img/vsl-trial-capa.jpg?v=20261107" autoplay muted loop playsinline preload="metadata" aria-label="Demonstração do Pro Creator"></video>
           <button type="button" data-vsl-unmute class="vsl-unmute" aria-label="Ativar o som do vídeo">
@@ -157,6 +156,15 @@ fbq('init','912571467763616');fbq('track','PageView');
           <span data-vsl-play class="vsl-play" hidden aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#fff"/></svg></span>
           <span class="vsl-bar" aria-hidden="true"><span data-vsl-progress></span></span>
         </div>
+      </div>
+      <div class="vsl-cta"><a class="btn btn-primary" data-checkout data-plan="essencial" data-value="59.90" href="https://buy.stripe.com/cNiaEXf2n9af7QYevH2Nq03" target="_blank" rel="noopener noreferrer">Quero testar o Pro Creator grátis <span class="btn-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></a></div>
+    </div>
+  </section>
+
+  <!-- MOCKUP -->
+  <section class="mockup-band hs-hide-mob" aria-label="Pro Creator no notebook e no celular">
+    <div class="container">
+      <img class="mockup-band-img" loading="lazy" decoding="async" src="assets/img/painel-notebook.webp?v=2" alt="Pro Creator funcionando no notebook" width="1100" height="639">
     </div>
   </section>
 
@@ -188,36 +196,36 @@ fbq('init','912571467763616');fbq('track','PageView');
     <div class="container">
       <div class="section-head" data-reveal>
         <span class="eyebrow">Soluções</span>
-        <h2 class="h2">Tudo para uma negociação <strong>mais profissional.</strong></h2>
-        <p class="lead">Do primeiro contato com o cliente à formalização do contrato, o Pro Creator ajuda sua empresa a trabalhar com mais organização, praticidade e profissionalismo.</p>
+        <h2 class="h2">Sua operação comercial mais organizada, <strong>todos os dias.</strong></h2>
+        <p class="lead">Chega de informações espalhadas entre planilhas, mensagens e documentos. Centralize as etapas do seu processo comercial em uma única plataforma.</p>
       </div>
 
       <div class="bento">
         <article class="card span-7" data-reveal>
           <span class="tile"><svg class="icon"><use href="#i-users"/></svg></span>
-          <h3>Gestão comercial organizada</h3>
-          <p>Centralize clientes, oportunidades, documentos, ordens de serviço, recibos e histórico comercial em um só lugar.</p>
+          <h3>Gestão de clientes</h3>
+          <p>Mantenha informações e históricos organizados para acompanhar seus relacionamentos comerciais.</p>
           <div class="card-media"><img src="assets/img/tela-dashboard.webp" alt="Tela de gestão de clientes do Pro Creator" width="1894" height="1184" loading="lazy"></div>
         </article>
 
         <article class="card card-blue span-5" data-reveal>
           <img class="card-mark" src="assets/img/simbolo-branco.svg" alt="" aria-hidden="true">
           <span class="tile"><svg class="icon"><use href="#i-file"/></svg></span>
-          <h3>Propostas que transmitem confiança</h3>
-          <p>Apresente seus serviços com a <strong>identidade da sua empresa</strong>, de forma organizada e profissional.</p>
+          <h3>Propostas profissionais</h3>
+          <p>Crie e envie propostas personalizadas com a <strong>identidade da sua empresa</strong>.</p>
         </article>
 
         <article class="card card-center span-4" data-reveal>
           <span class="tile"><svg class="icon"><use href="#i-file-sign"/></svg></span>
-          <h3>Contratos com assinatura digital</h3>
-          <p>Formalize negócios com assinatura digital pela Autentique, sem precisar sair do Pro Creator.</p>
+          <h3>Contratos digitais</h3>
+          <p>Formalize negociações com contratos e assinatura digital.</p>
         </article>
 
         <article class="card card-split span-8" data-reveal>
           <div class="card-copy">
             <span class="tile"><svg class="icon"><use href="#i-eye"/></svg></span>
-            <h3>Acompanhamento de visualizações</h3>
-            <p>Saiba quando o cliente visualizou sua proposta e acompanhe o andamento da negociação.</p>
+            <h3>Acompanhamento em tempo real</h3>
+            <p>Saiba quando seu cliente visualiza uma proposta e acompanhe as aprovações.</p>
             <span class="demo-label">Exemplos de notificações</span>
           </div>
           <div class="notify" aria-hidden="true">
@@ -275,8 +283,8 @@ fbq('init','912571467763616');fbq('track','PageView');
 
         <article class="card span-6" data-reveal>
           <span class="tile"><svg class="icon"><use href="#i-file"/></svg></span>
-          <h3>Ordens de serviço e recibos</h3>
-          <p>Organize documentos relacionados aos serviços prestados, com mais praticidade no dia a dia.</p>
+          <h3>Gestão de documentos</h3>
+          <p>Organize recibos e ordens de serviço em um único ambiente.</p>
         </article>
 
       </div>
@@ -288,31 +296,30 @@ fbq('init','912571467763616');fbq('track','PageView');
     <img class="how-mark" src="assets/img/simbolo-branco.svg" alt="" aria-hidden="true">
     <div class="container">
       <span class="eyebrow">Como funciona</span>
-      <h2 class="h2">Da proposta ao contrato assinado.</h2>
-      <p class="lead how-lead">Um processo comercial mais organizado, do início ao fim.</p>
+      <h2 class="h2">Do orçamento ao fechamento, tudo conectado.</h2>
       <ol class="steps">
         <li class="step" data-reveal>
           <span class="chip">Clientes</span>
           <span class="step-num"><span>/</span>01</span>
-          <div><h3>Organize seus clientes</h3><p>Cadastre seus clientes e mantenha as informações e o histórico comercial em um só lugar.</p></div>
+          <div><h3>Organize seus clientes</h3><p>Cadastre seus clientes e mantenha suas informações comerciais centralizadas.</p></div>
           <span class="step-tag">Histórico organizado</span>
         </li>
         <li class="step" data-reveal>
           <span class="chip">Propostas</span>
           <span class="step-num"><span>/</span>02</span>
-          <div><h3>Crie e envie propostas profissionais</h3><p>Apresente serviços com sua marca e compartilhe por link, WhatsApp ou PDF.</p></div>
+          <div><h3>Crie e envie propostas</h3><p>Prepare propostas profissionais e compartilhe com seus clientes por link.</p></div>
           <span class="step-tag">Link profissional</span>
         </li>
         <li class="step" data-reveal>
           <span class="chip">Aprovação</span>
           <span class="step-num"><span>/</span>03</span>
-          <div><h3>Acompanhe e receba a aprovação</h3><p>Saiba quando o cliente visualizou sua proposta e receba a aprovação online.</p></div>
+          <div><h3>Acompanhe as negociações</h3><p>Visualize interações, acompanhe respostas e receba aprovações online.</p></div>
           <span class="step-tag">Aprovação online</span>
         </li>
         <li class="step" data-reveal>
           <span class="chip">Contratos</span>
           <span class="step-num"><span>/</span>04</span>
-          <div><h3>Formalize o contrato</h3><p>Envie o documento para assinatura digital e acompanhe o processo de formalização.</p></div>
+          <div><h3>Formalize seus contratos</h3><p>Transforme negociações aprovadas em contratos e envie para assinatura digital.</p></div>
           <span class="step-tag">Assinatura digital</span>
         </li>
       </ol>
@@ -354,9 +361,10 @@ fbq('init','912571467763616');fbq('track','PageView');
   <section class="section platform" id="plataforma">
     <div class="container">
       <div class="section-head" data-reveal>
-        <span class="eyebrow">Demonstração</span>
-        <h2 class="h2">Parece complicado? <strong>Veja como é simples.</strong></h2>
-        <p class="lead">Assista ao Pro Creator funcionando na prática e descubra como organizar clientes, criar propostas, acompanhar aprovações e formalizar contratos em um único sistema.</p>
+        <span class="eyebrow">Para empresas</span>
+        <h2 class="h2">Mais do que criar propostas. <strong>Uma plataforma para sua empresa.</strong></h2>
+        <p class="lead">O Pro Creator foi desenvolvido para empresas e profissionais que precisam organizar suas rotinas comerciais, apresentar propostas com profissionalismo e acompanhar cada negociação com mais controle.</p>
+        <p class="lead">Seja no escritório ou pelo celular, tenha as principais informações comerciais disponíveis quando precisar.</p>
         <a class="btn btn-primary" href="#vsl">Ver o painel <span class="btn-arrow"><svg class="icon"><use href="#i-play"/></svg></span></a>
       </div>
     </div>
@@ -383,8 +391,9 @@ fbq('init','912571467763616');fbq('track','PageView');
     <div class="container">
       <div class="section-head" data-reveal>
         <span class="eyebrow">Planos</span>
-        <h2 class="h2">Um plano para cada <strong>fase da sua empresa.</strong></h2>
-        <p class="lead">Comece com o essencial para organizar seu comercial e evolua conforme sua empresa precisa de mais capacidade e recursos.</p>
+        <h2 class="h2">Experimente o Pro Creator <strong>por 7 dias.</strong></h2>
+        <p class="lead">Conheça a plataforma na prática, explore as funcionalidades do plano escolhido e descubra como o Pro Creator pode fazer parte da rotina da sua empresa.</p>
+        <p class="lead plans-terms">É necessário cadastrar um cartão para iniciar o teste. A primeira cobrança da assinatura acontece após os 7 dias, caso não ocorra cancelamento antes do encerramento do período gratuito.</p>
       </div>
             <div class="plan-grid plan-grid-4">
 <!-- Checkouts Stripe (payment links) -->
@@ -536,11 +545,11 @@ fbq('init','912571467763616');fbq('track','PageView');
   <!-- CTA FINAL -->
   <section class="final" id="comecar">
     <div class="container">
-      <h2 class="h2" data-reveal>Sua próxima negociação merece <strong>uma apresentação melhor.</strong></h2>
-      <p class="lead" data-reveal>Organize clientes, envie propostas profissionais, acompanhe as visualizações e formalize contratos em uma única plataforma.</p>
+      <h2 class="h2" data-reveal>Sua empresa merece um processo comercial <strong>mais profissional.</strong></h2>
+      <p class="lead" data-reveal>Comece a organizar clientes, propostas, aprovações e contratos em um só lugar.</p>
       <p class="lead" data-reveal><strong>Experimente o Pro Creator por 7 dias sem pagar nada hoje.</strong></p>
       <div class="hero-actions" data-reveal>
-        <a class="btn btn-primary" data-checkout data-plan="essencial" data-value="59.90" href="https://buy.stripe.com/cNiaEXf2n9af7QYevH2Nq03" target="_blank" rel="noopener noreferrer">Começar meus 7 dias grátis <span class="btn-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></a>
+        <a class="btn btn-primary" data-checkout data-plan="essencial" data-value="59.90" href="https://buy.stripe.com/cNiaEXf2n9af7QYevH2Nq03" target="_blank" rel="noopener noreferrer">Começar teste grátis de 7 dias <span class="btn-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></a>
       </div>
       <p class="microcopy" data-reveal>Cartão necessário. Depois R$ 59,90/mês. Cancele antes da primeira cobrança se não quiser continuar.</p>
     </div>
