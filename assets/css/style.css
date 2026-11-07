@@ -870,3 +870,5 @@ main{overflow-x:clip}
   .hs-copy .hs-cond .microcopy-sub{font-size:13px}
   .hero-split{gap:28px}
 }
+.vsl-sec .hero-video{max-width:880px}
+@media (max-width:640px){.vsl-sec .hero-video{border-radius:12px}}
