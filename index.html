@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/img/mockup-procreator.webp">
-<link rel="stylesheet" href="assets/css/style.css?v=20261107copy">
+<link rel="stylesheet" href="assets/css/style.css?v=20261107hero">
 <style>
 #pc-loader{position:fixed;inset:0;z-index:10000;background:#fff;display:flex;align-items:center;justify-content:center;transition:opacity .35s ease,visibility .35s}
 #pc-loader.done{opacity:0;visibility:hidden}
@@ -121,34 +121,14 @@ fbq('init','912571467763616');fbq('track','PageView');
 <main>
 
   <!-- HERO -->
-  <section class="hero" id="inicio">
+  <section class="hero hero-v" id="inicio">
     <div class="container hero-split">
       <div class="hs-copy">
         <span class="eyebrow">Plataforma de gestão comercial</span>
         <h1 class="h1">Do primeiro orçamento ao contrato assinado.</h1>
         <p class="hero-lead">Organize seus clientes, crie propostas profissionais, acompanhe negociações e gerencie contratos em um só lugar. Tudo para facilitar o dia a dia da sua empresa.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-nowrap" data-checkout data-plan="essencial" data-value="59.90" href="https://buy.stripe.com/cNiaEXf2n9af7QYevH2Nq03" target="_blank" rel="noopener noreferrer">Começar meus 7 dias grátis <span class="btn-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></a>
-          <a class="btn btn-ghost-light btn-hero2" href="#planos">Ver planos e preços</a>
-        </div>
-        <p class="microcopy hs-cond"><strong>R$ 0 hoje · Cartão necessário · Cancele durante o teste sem cobrança.</strong><span class="microcopy-sub">Após 7 dias, R$ 59,90/mês no Essencial.</span></p>
-      </div>
-      <div class="hs-visual">
-        <img class="hs-mockup" src="assets/img/mockup-home.webp?v=1" alt="Dashboard do Pro Creator com prévias de uma proposta comercial e de um contrato para assinatura." width="1600" height="1269" fetchpriority="high" decoding="async">
-      </div>
-    </div>
-  </section>
-
-  <!-- VSL -->
-  <section class="section vsl-sec" id="vsl" aria-label="Vídeo de demonstração do Pro Creator">
-    <div class="container">
-      <div class="section-head" data-reveal>
-        <h2 class="h2">Veja como é fácil usar o Pro Creator <strong>na sua empresa.</strong></h2>
-        <p class="lead">Assista a uma demonstração real e descubra como organizar seu processo comercial, da proposta ao contrato.</p>
-      </div>
-      <div class="vsl-wrap">
-        <div class="hero-video" data-vsl>
-          <video data-vsl-video src="assets/video/vsl-trial.mp4?v=20261107" poster="assets/img/vsl-trial-capa.jpg?v=20261107" autoplay muted loop playsinline preload="metadata" aria-label="Demonstração do Pro Creator"></video>
+        <div class="hero-video hs-video" id="vsl" data-vsl>
+          <video data-vsl-video src="assets/video/vsl-trial.mp4?v=20261107" poster="assets/img/vsl-trial-capa.jpg?v=20261107" autoplay muted loop playsinline preload="metadata" fetchpriority="high" aria-label="Demonstração do Pro Creator"></video>
           <button type="button" data-vsl-unmute class="vsl-unmute" aria-label="Ativar o som do vídeo">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z" fill="currentColor"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
             <span class="vsl-unmute-t">Toque para ouvir</span><span class="vsl-unmute-d">Clique para ouvir</span>
@@ -156,8 +136,22 @@ fbq('init','912571467763616');fbq('track','PageView');
           <span data-vsl-play class="vsl-play" hidden aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#fff"/></svg></span>
           <span class="vsl-bar" aria-hidden="true"><span data-vsl-progress></span></span>
         </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-nowrap" data-checkout data-plan="essencial" data-value="59.90" href="https://buy.stripe.com/cNiaEXf2n9af7QYevH2Nq03" target="_blank" rel="noopener noreferrer">Começar meus 7 dias grátis <span class="btn-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></a>
+          <a class="btn btn-ghost-light btn-hero2" href="#planos">Ver planos e preços</a>
+        </div>
+        <p class="microcopy hs-cond"><strong>R$ 0 hoje · Cartão necessário · Cancele durante o teste sem cobrança.</strong><span class="microcopy-sub">Após 7 dias, R$ 59,90/mês no Essencial.</span></p>
       </div>
-      <div class="vsl-cta"><a class="btn btn-primary" data-checkout data-plan="essencial" data-value="59.90" href="https://buy.stripe.com/cNiaEXf2n9af7QYevH2Nq03" target="_blank" rel="noopener noreferrer">Quero testar o Pro Creator grátis <span class="btn-arrow"><svg class="icon"><use href="#i-arrow"/></svg></span></a></div>
+    </div>
+  </section>
+
+  <!-- PLATAFORMA (mockup) -->
+  <section class="section hero-mock-sec" aria-label="Pro Creator no computador e no celular">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2 class="h2">Uma plataforma para toda a sua <strong>operação comercial.</strong></h2>
+      </div>
+      <img class="hs-mockup" src="assets/img/mockup-home.webp?v=1" alt="Dashboard do Pro Creator com prévias de uma proposta comercial e de um contrato para assinatura." width="1600" height="1269" loading="lazy" decoding="async">
     </div>
   </section>
 
